@@ -1,0 +1,11 @@
+{
+  "general": {
+    "game_start": ["Welcome to the Thrist Games.", "Welcome to Drake's favourite TV show, the Thirst Games."],
+    "combat_start": ["{a} spots {d}."]
+  },
+  "outcomes": {
+    "attacker_win": ["{af} {al} kills {df} {dl} without mercy."],
+    "defender_win": ["{d} gets mad and kills {a}."],
+    "draw": ["{a} and {d} make amends and make out."],
+  }
+}

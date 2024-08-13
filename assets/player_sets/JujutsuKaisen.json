@@ -1,0 +1,162 @@
+[
+    {
+        "given_name": "Yuji",
+        "surname": "Itadori",
+        "stats": {
+            "attack": 0.5696157133998083,
+            "defense": 0.490621496374596,
+            "resolve": 0.35279415462556185
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Megumi",
+        "surname": "Fushiguro",
+        "stats": {
+            "attack": 0.5029543121446494,
+            "defense": 0.4230190057631532,
+            "resolve": 0.4924420067515216
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Nobara",
+        "surname": "Kugisaki",
+        "stats": {
+            "attack": 0.5023488021314639,
+            "defense": 0.41593944743626254,
+            "resolve": 0.3333954219935906
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Satoru",
+        "surname": "Gojo",
+        "stats": {
+            "attack": 0.46614838471611775,
+            "defense": 0.4556546267479078,
+            "resolve": 0.5552580669413927
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Maki",
+        "surname": "Zenin",
+        "stats": {
+            "attack": 0.38840928775235944,
+            "defense": 0.6381396902650416,
+            "resolve": 0.5388313624571653
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Toge",
+        "surname": "Inumaki",
+        "stats": {
+            "attack": 0.4056204422078092,
+            "defense": 0.5525368429221607,
+            "resolve": 0.5440758132270579
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Panda",
+        "surname": "",
+        "stats": {
+            "attack": 0.6276058959098308,
+            "defense": 0.5937139747081291,
+            "resolve": 0.5738189065479992
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Yuta",
+        "surname": "Okkotsu",
+        "stats": {
+            "attack": 0.3917760219716825,
+            "defense": 0.4595722819543052,
+            "resolve": 0.6248082941195183
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Sukuna",
+        "surname": "",
+        "stats": {
+            "attack": 0.31400495841634296,
+            "defense": 0.3660098173441445,
+            "resolve": 0.3956712841105472
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Choso",
+        "surname": "",
+        "stats": {
+            "attack": 0.4425450724710607,
+            "defense": 0.523795492584029,
+            "resolve": 0.5631560756333627
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Aoi",
+        "surname": "Todo",
+        "stats": {
+            "attack": 0.4398937847643492,
+            "defense": 0.41038506746956577,
+            "resolve": 0.45896906853472885
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Kento",
+        "surname": "Nanami",
+        "stats": {
+            "attack": 0.5466067316079705,
+            "defense": 0.54655745874245,
+            "resolve": 0.40990798025443254
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Suguru",
+        "surname": "Geto",
+        "stats": {
+            "attack": 0.6672943040274578,
+            "defense": 0.3132633852202522,
+            "resolve": 0.4922555391772011
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Mahito",
+        "surname": "",
+        "stats": {
+            "attack": 0.3512501509024099,
+            "defense": 0.5768670666098875,
+            "resolve": 0.5912837203892882
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Hanami",
+        "surname": "",
+        "stats": {
+            "attack": 0.38969987739008183,
+            "defense": 0.5545676590495442,
+            "resolve": 0.49877653897273544
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Jogo",
+        "surname": "",
+        "stats": {
+            "attack": 0.37526795752554254,
+            "defense": 0.39370401236293073,
+            "resolve": 0.5314029611439198
+        },
+        "age": 18
+    }
+]
