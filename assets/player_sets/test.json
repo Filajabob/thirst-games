@@ -1,0 +1,22 @@
+[
+  {
+    "given_name": "Satoru",
+    "surname": "Gojo",
+    "stats": {
+      "attack": 0.75,
+      "defense": 0.5,
+      "resolve": 0.5
+    },
+    "age": 20
+  },
+  {
+    "given_name": "Yuji",
+    "surname": "Itadori",
+    "stats": {
+      "attack": 0.5,
+      "defense": 0.5,
+      "resolve": 0.5
+    },
+    "age": 20
+  }
+]

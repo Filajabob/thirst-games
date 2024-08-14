@@ -1,0 +1,11 @@
+{
+  "general": {
+    "game_start": ["Welcome to the Thrist Games.", "Welcome to Drake's favourite TV show, the Thirst Games.", "Welcome to my malevolent shrine, The Thirst Games", "Welcome to Skibidi Thirst Games"],
+    "combat_start": ["{a} spots {d}.", "{a} caught {d} lackin", "{a} stalks {d}. Lets take a closer look"]
+  },
+  "outcomes": {
+    "attacker_win": ["{af} {al} kills {df} {dl} without mercy.", "{af} {al} absolutely pieces up {df}, na na na na, hey hey hey, goodbye."],
+    "defender_win": ["{d} gets mad and kills {a}."],
+    "draw": ["{a} and {d} make amends and make out.", "{a"],
+  }
+}
