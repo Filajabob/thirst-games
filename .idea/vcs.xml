@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/thirst-games" vcs="Git" />
+=======
+>>>>>>> 4fdc4796e692279426bea9cf482269f1049fa14b
   </component>
 </project>
