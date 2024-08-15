@@ -114,7 +114,7 @@ class AwakeningEvent(PersonalEvent):
     def start(self):
         for trait in self.awakening_player.dormant_traits():
             if utils.random_weighted_boolean(trait.awakening_chance):
-                trait.awakened = True
+                trait.awaken(self.awakening_player)
 
                 return trait
 

@@ -1,0 +1,29 @@
+[
+    {
+        "given_name": "a",
+        "surname": "a",
+        "stats": {
+            "attack": 0.6331961624796778,
+            "defense": 0.3359677185465526,
+            "resolve": 0.597799708198422
+        },
+        "age": 18,
+        "death_age": null,
+        "traits": {
+            "PassiveTrait": [
+                {
+                    "name": "A",
+                    "owner_stat_mods": {
+                        "attack": 1.0
+                    },
+                    "opponent_stat_mods": {},
+                    "description": null,
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2,
+                    "trait_type": "Trait"
+                }
+            ]
+        }
+    }
+]

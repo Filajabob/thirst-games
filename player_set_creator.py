@@ -31,7 +31,7 @@ while True:
             "attack": normal(),
             "defense": normal(),
             "resolve": normal()
-        }, 18
+        }, 18, traits=[utils.PassiveTrait("Natural Experience", {"resolve": 0.2}, {}, )]
     )
     )
 

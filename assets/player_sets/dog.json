@@ -1,0 +1,26 @@
+[
+    {
+        "given_name": "a",
+        "surname": "man",
+        "stats": {
+            "attack": 0.5358316605823895,
+            "defense": 0.49140317736220007,
+            "resolve": 0.5001107415370988
+        },
+        "age": 18,
+        "death_age": null,
+        "traits": {}
+    },
+    {
+        "given_name": "a",
+        "surname": "dog",
+        "stats": {
+            "attack": 0.43379309909332603,
+            "defense": 0.37692654284810095,
+            "resolve": 0.40795386053938265
+        },
+        "age": 18,
+        "death_age": null,
+        "traits": {}
+    }
+]

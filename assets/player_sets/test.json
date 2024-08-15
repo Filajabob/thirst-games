@@ -1,31 +1,54 @@
 [
     {
-        "given_name": "Bob",
-        "surname": "Bobby",
+        "given_name": "A",
+        "surname": "Man",
         "stats": {
-            "attack": 1.0,
-            "defense": 1.0,
-            "resolve": 1.0
+            "attack": 0.4445671799145747,
+            "defense": 0.6475894777692105,
+            "resolve": 0.6631922708506913
         },
         "age": 18,
-        "traits": [
-            {
-                "name": "WEEEEE",
-                "owner_stat_mods":  {"attack":  1.0},
-                "opponent_stat_mods": {"defense":  -1.0},
-                "awakening_chance": 1.0
-            }
-        ]
+        "death_age": null,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Natural Experience",
+                    "owner_stat_mods": {
+                        "resolve": 0.2
+                    },
+                    "opponent_stat_mods": {},
+                    "description": null,
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
     },
     {
-        "given_name": "TOm",
-        "surname": "Tommy",
+        "given_name": "Your",
+        "surname": "Mom",
         "stats": {
-            "attack": 0.0,
-            "defense": 1.0,
-            "resolve": 2.0
+            "attack": 0.5608685857693714,
+            "defense": 0.6260495261261587,
+            "resolve": 0.40648756944624886
         },
         "age": 18,
-        "traits": []
+        "death_age": null,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Natural Experience",
+                    "owner_stat_mods": {
+                        "resolve": 0.2
+                    },
+                    "opponent_stat_mods": {},
+                    "description": null,
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
     }
 ]

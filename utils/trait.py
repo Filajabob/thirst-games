@@ -1,9 +1,10 @@
 import jsonpickle
+import json
 
 
 class Trait:
-    def __init__(self, name: str, owner_stat_mods: dict, opponent_stat_mods, description=None, awakened=False,
-                 parent_trait=None, awakening_chance=0.2):
+    def __init__(self, name: str, owner_stat_mods: dict, opponent_stat_mods,
+                 description=None, awakened=False, parent_trait=None, awakening_chance=0.2):
         """
         A Trait is a property of a Player that modifies the stats of the owner of the Trait and/or the opponent for the
         duration of a Combat Event. Each Trait is technically unique to each Player, though they may share names/characteristics
@@ -25,12 +26,38 @@ class Trait:
         self.parent_trait = parent_trait
         self.awakening_chance = awakening_chance
 
+    def awaken(self, owner):
+        self.awakened = True
+
     def serialize(self):
-        return jsonpickle.dumps(self, unpicklable=False)
+        return json.loads(jsonpickle.dumps(self, unpicklable=False))
 
 
 class PassiveTrait(Trait):
     pass
+
+
+class PermanentTrait(PassiveTrait):
+    def __init__(self, name: str, stat_mods, description=None, awakened=False, parent_trait=None, awakening_chance=0.2):
+        """
+        A PassiveTrait which permanently changes the owner's stats.
+        :param name:
+        :param stat_mods:
+        :param description:
+        :param awakened:
+        :param parent_trait:
+        :param awakening_chance:
+        """
+        self.name = name
+        self.stat_mods = stat_mods
+        self.description = description
+        self.awakened = awakened
+        self.parent_trait = parent_trait
+        self.awakening_chance = awakening_chance
+
+    def awaken(self, owner):
+        self.awakened = True
+        owner.apply_perm_trait(self)
 
 
 class ActiveTrait(Trait):
