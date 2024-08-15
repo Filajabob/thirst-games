@@ -1,24 +1,33 @@
 from game import Game
 import utils
 import time
+from event import Event, CombatEvent
 
 print("Welcome to the Thirst Games.\n")
 
-game = Game(utils.PlayerSet.load("assets/player_sets/JujutsuKaisen.json"), 2024)
+game = Game(utils.PlayerSet.load(input("Insert Player Set path: ")), 2024)
 game.start()
 
 while game.can_run():
-    outcome = game.rotate()
-    print(f"{outcome.attacker.full_name} attacks {outcome.defender.full_name}")
-    time.sleep(1)
+    events = game.rotate()
 
-    if outcome.result == utils.Outcome.ATTACKER_WIN:
-        print(f"{outcome.attacker.full_name} kills {outcome.defender.full_name}")
-    elif outcome.result == utils.Outcome.DEFENDER_WIN:
-        print(f"{outcome.defender.full_name}, defending themself, kills {outcome.attacker.full_name}")
-    else:
-        print("Everyone runs away")
+    for event in events:
+        if isinstance(event, CombatEvent):
+            if not game.can_run():
+                break
+            event.start()
+            utils.typewrite(event.start_message())
+            time.sleep(1)
+            while True:
+                outcome = event.rotate()
 
-    time.sleep(1)
+                utils.typewrite(outcome.combat_result_msg())
+                time.sleep(1)
 
-    print("")
+                if outcome.result is not utils.Outcome.NO_OUTCOME:
+                    time.sleep(2)
+                    break
+
+            print("")
+
+utils.typewrite(f"{game.player_set.players[0].full_name} is the winner of the Thirst Games!")

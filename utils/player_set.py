@@ -1,13 +1,12 @@
 import json
-from player import Player
 
 
 class PlayerSet:
-    def __init__(self, players: list[Player]):
+    def __init__(self, players):
         """A set of Players for a Game"""
         self.players = players
 
-    def kill(self, player: Player):
+    def kill(self, player):
         """
         Removes a player from the PlayerSet. Do not remove directly from PlayerSet.players.
         """
@@ -24,6 +23,8 @@ class PlayerSet:
 
     @staticmethod
     def load(path):
+        from player import Player
+
         with open(path, 'r') as f:
             serialized_players = json.load(f)
 
