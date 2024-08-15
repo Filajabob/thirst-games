@@ -14,3 +14,5 @@ class Constants:
 
     with open(MESSAGES_JSON, 'r') as f:
         MESSAGES = json.load(f)
+
+    BASE_AWAKENING_CHANCE = 1

@@ -42,8 +42,8 @@ class CombatEvent(Event):
         self.attacker = players[0]
         self.defender = players[1]
 
-    def outcome(self, result: int) -> Outcome:
-        return Outcome(self.attacker, self.defender, result, self.turn)
+    def outcome(self, result: int, *, awakening=False) -> Outcome:
+        return Outcome(self.attacker, self.defender, result, self.turn, awakening=awakening)
 
     def insert_names(self, msg):
         msg = msg.replace('{a}', self.attacker.full_name)
@@ -65,8 +65,8 @@ class CombatEvent(Event):
         """Rotates to the next turn."""
         self.turn += 1
 
-        attacker_adjusted_stats = self.attacker.apply_all_player_stats(self.defender)
-        defender_adjusted_stats = self.defender.apply_all_player_stats(self.attacker)
+        attacker_adjusted_stats = self.attacker.apply_all_player_traits(self.defender)
+        defender_adjusted_stats = self.defender.apply_all_player_traits(self.attacker)
 
         if self.turn % 2 == 0:
             # Turn is even, therefore the attacker is attacking.
@@ -80,7 +80,11 @@ class CombatEvent(Event):
             if utils.random_weighted_boolean(attacker_atk_effect):
                 # The attacker kills the defender
                 self.player_set.kill(self.defender)
-                return self.outcome(Outcome.ATTACKER_WIN)
+
+                if utils.random_weighted_boolean(Constants.BASE_AWAKENING_CHANCE):
+                    return self.outcome(Outcome.ATTACKER_WIN, awakening=True)
+                else:
+                    return self.outcome(Outcome.ATTACKER_WIN)
         else:
             # Turn is odd, therefore the defender is attacking
             defender_atk_effect = defender_adjusted_stats["attack"] - attacker_adjusted_stats["defense"]
@@ -90,6 +94,34 @@ class CombatEvent(Event):
             if utils.random_weighted_boolean(defender_atk_effect):
                 # The defender kills the attacker
                 self.player_set.kill(self.attacker)
-                return self.outcome(Outcome.DEFENDER_WIN)
+
+                if utils.random_weighted_boolean(Constants.BASE_AWAKENING_CHANCE):
+                    return self.outcome(Outcome.DEFENDER_WIN, awakening=True)
+                else:
+                    return self.outcome(Outcome.DEFENDER_WIN)
 
         return self.outcome(Outcome.NO_OUTCOME)  # If we reach this point, no one won or fled, so we continue.
+
+
+class PersonalEvent(Event):
+    pass
+
+
+class AwakeningEvent(PersonalEvent):
+    def __init__(self, awakening_player):
+        self.awakening_player = awakening_player
+
+    def start(self):
+        for trait in self.awakening_player.dormant_traits():
+            if utils.random_weighted_boolean(trait.awakening_chance):
+                trait.awakened = True
+
+                return trait
+
+
+class NaturalDeathEvent(PersonalEvent):
+    pass
+
+
+class MatingEvent(Event):
+    pass

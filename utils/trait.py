@@ -2,7 +2,8 @@ import jsonpickle
 
 
 class Trait:
-    def __init__(self, name: str, owner_stat_mods: dict, opponent_stat_mods, description=None, awakened=False, parent_trait=None):
+    def __init__(self, name: str, owner_stat_mods: dict, opponent_stat_mods, description=None, awakened=False,
+                 parent_trait=None, awakening_chance=0.2):
         """
         A Trait is a property of a Player that modifies the stats of the owner of the Trait and/or the opponent for the
         duration of a Combat Event. Each Trait is technically unique to each Player, though they may share names/characteristics
@@ -22,6 +23,7 @@ class Trait:
         self.description = description
         self.awakened = awakened
         self.parent_trait = parent_trait
+        self.awakening_chance = awakening_chance
 
     def serialize(self):
         return jsonpickle.dumps(self, unpicklable=False)

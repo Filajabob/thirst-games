@@ -27,6 +27,10 @@ class Player:
         """Returns a list of all awakened Traits that this Player has."""
         return [trait for trait in self.traits if trait.awakened]
 
+    def dormant_traits(self) -> list[utils.Trait]:
+        """Returns a list of all dormant (unawakened) Traits that this Player has."""
+        return [trait for trait in self.traits if not trait.awakened]
+
     @staticmethod
     def adjust_stats(stats, trait_mods):
         """Adjusted a given dict of stats based on a list of Traits."""

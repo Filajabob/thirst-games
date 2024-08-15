@@ -7,17 +7,27 @@ with open(Constants.MESSAGES_JSON, 'r') as f:
 
 
 class Outcome:
-    def __init__(self, attacker, defender, result: int, turn: int):
+    def __init__(self, attacker, defender, result: int, turn: int, awakening: bool=False):
         """
         Object that represents the outcome of a game.Game rotation
         :param attacker: player.Player: The attacker of a CombatEvent
         :param defender: player.Player: The defender of a CombatEvent
         :param result: int: An integer representing who won; 0 is a draw, 1 is an attacker win, -1 is a defender win
+        :param awakening: bool: Whether the winner (if any) can have a chance to Awaken.
         """
         self.attacker = attacker
         self.defender = defender
         self.result = result
         self.turn = turn
+        self.awakening = awakening
+
+    def winner(self):
+        if self.result > 0:
+            return self.attacker
+        elif self.result < 0:
+            return self.defender
+        else:
+            return None
 
     def insert_names(self, msg):
         msg = msg.replace('{a}', self.attacker.full_name)

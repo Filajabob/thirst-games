@@ -1,22 +1,31 @@
 [
-  {
-    "given_name": "Satoru",
-    "surname": "Gojo",
-    "stats": {
-      "attack": 0.75,
-      "defense": 0.5,
-      "resolve": 0.5
+    {
+        "given_name": "Bob",
+        "surname": "Bobby",
+        "stats": {
+            "attack": 1.0,
+            "defense": 1.0,
+            "resolve": 1.0
+        },
+        "age": 18,
+        "traits": [
+            {
+                "name": "WEEEEE",
+                "owner_stat_mods":  {"attack":  1.0},
+                "opponent_stat_mods": {"defense":  -1.0},
+                "awakening_chance": 1.0
+            }
+        ]
     },
-    "age": 20
-  },
-  {
-    "given_name": "Yuji",
-    "surname": "Itadori",
-    "stats": {
-      "attack": 0.5,
-      "defense": 0.5,
-      "resolve": 0.5
-    },
-    "age": 20
-  }
+    {
+        "given_name": "TOm",
+        "surname": "Tommy",
+        "stats": {
+            "attack": 0.0,
+            "defense": 1.0,
+            "resolve": 2.0
+        },
+        "age": 18,
+        "traits": []
+    }
 ]
