@@ -27,9 +27,23 @@ class Player:
         """Returns a list of all awakened Traits that this Player has."""
         return [trait for trait in self.traits if trait.awakened]
 
+    @staticmethod
+    def adjust_stats(stats, trait_mods):
+        """Adjusted a given dict of stats based on a list of Traits."""
+        for trait_mods in trait_mods:
+            for stat, adjustment in trait_mods.items():
+                stats[stat] += adjustment
+
+        return stats
+
     def stats_with_traits(self):
         """Returns the Player's stats, adjusted with Traits."""
-        adjusted_stats = self.stats
+        return self.adjust_stats(self.stats, [trait.owner_stat_mods for trait in self.awakened_traits()])
 
-        for trait in self.awakened_traits():
-            for stat, adjustment
+    def adjust_opponent_stats(self, opp_stats):
+        """Returns an opponent's stats, adjusted with this Player's Traits"""
+        return self.adjust_stats(opp_stats, [trait.opponent_stat_mods for trait in self.awakened_traits()])
+
+    def apply_all_player_traits(self, opponent):
+        """Returns the Player's Trait-adjusted stats, adjusted with an opponent's stats."""
+        return self.adjust_stats(self.stats_with_traits(), [trait.opponent_stat_mods for trait in opponent.awakened_traits()])

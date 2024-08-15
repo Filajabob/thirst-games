@@ -64,13 +64,17 @@ class CombatEvent(Event):
     def rotate(self) -> Outcome:
         """Rotates to the next turn."""
         self.turn += 1
+
+        attacker_adjusted_stats = self.attacker.apply_all_player_stats(self.defender)
+        defender_adjusted_stats = self.defender.apply_all_player_stats(self.attacker)
+
         if self.turn % 2 == 0:
             # Turn is even, therefore the attacker is attacking.
-            attacker_atk_effect = self.attacker.stats["attack"] - self.defender.stats["defense"]
+            attacker_atk_effect = attacker_adjusted_stats["attack"] - defender_adjusted_stats["defense"]
 
             # Ensure attacker doesn't flee immediately (that would be sad)
             if self.turn != 0:
-                if not utils.random_weighted_boolean((self.attacker.stats["resolve"] + attacker_atk_effect) / 2):
+                if not utils.random_weighted_boolean((attacker_adjusted_stats["resolve"] + attacker_atk_effect) / 2):
                     return self.outcome(Outcome.ATTACKER_FLEES)  # Attacker flees
 
             if utils.random_weighted_boolean(attacker_atk_effect):
@@ -79,8 +83,8 @@ class CombatEvent(Event):
                 return self.outcome(Outcome.ATTACKER_WIN)
         else:
             # Turn is odd, therefore the defender is attacking
-            defender_atk_effect = self.defender.stats["attack"] - self.attacker.stats["defense"]
-            if not utils.random_weighted_boolean((self.defender.stats["resolve"] + defender_atk_effect) / 2):
+            defender_atk_effect = defender_adjusted_stats["attack"] - attacker_adjusted_stats["defense"]
+            if not utils.random_weighted_boolean((defender_adjusted_stats["resolve"] + defender_atk_effect) / 2):
                 return self.outcome(Outcome.DEFENDER_FLEES)  # Defender flees
 
             if utils.random_weighted_boolean(defender_atk_effect):
@@ -89,50 +93,3 @@ class CombatEvent(Event):
                 return self.outcome(Outcome.DEFENDER_WIN)
 
         return self.outcome(Outcome.NO_OUTCOME)  # If we reach this point, no one won or fled, so we continue.
-
-    # def calculate(self):
-    #     """Determines the outcome of the Event."""
-    #
-    #     # Attacker will attack the defender first
-    #     # The higher the attack_effect, the more likely the attacker will kill successfully
-    #     attack_effect = self.attacker.stats["attack"] - self.defender.stats["defense"]
-    #
-    #     if utils.random_weighted_boolean(attack_effect):
-    #         # ATTACKER WIN - Attacker kills defender
-    #         self.attacker.stats["attack"] += Constants.ATTACKER_WIN_STAT_BOOST
-    #         self.attacker.stats["resolve"] += Constants.ATTACKER_WIN_STAT_BOOST
-    #
-    #         self.player_set.kill(self.defender)
-    #
-    #         return utils.Outcome.ATTACKER_WIN
-    #     else:
-    #         # ATTACKER FAILED - DEFENDER CAN COUNTERATTACK OR FLEE
-    #         self.attacker.stats["attack"] -= Constants.FAIL_STAT_PENALTY  # Attacker gets a bit worse at attacking
-    #         counterattack_effect = self.defender.stats["attack"] - self.attacker.stats["defense"]
-    #
-    #         # Takes the average of the defender's advantage and their resolve, then uses that to calculate the chance
-    #         # of fleeing (i.e. if a defender is kind of strong compared to the attacker, but is scared AF,
-    #         # they'd probably run)
-    #         if utils.random_weighted_boolean((self.defender.stats["resolve"] + counterattack_effect) / 2):
-    #             # DEFENDER COUNTERATTACKS
-    #             if utils.random_weighted_boolean(counterattack_effect):
-    #                 # DEFENDER WIN - Defender kills attacker
-    #                 self.defender.stats["attack"] += Constants.DEFENDER_WIN_STAT_BOOST
-    #                 self.defender.stats["defense"] += Constants.DEFENDER_WIN_STAT_BOOST
-    #                 self.defender.stats["resolve"] += Constants.DEFENDER_WIN_STAT_BOOST
-    #
-    #                 self.player_set.kill(self.attacker)
-    #
-    #                 return utils.Outcome.DEFENDER_WIN
-    #             else:
-    #                 # DEFENDER FAILS COUNTERATTACK - EVERYONE FLEES
-    #                 self.defender.stats["attack"] -= Constants.FAIL_STAT_PENALTY
-    #         else:
-    #             # DEFENDER FLEES WITHOUT COUNTERATTACKING
-    #             pass
-    #
-    #         # DRAW - Everyone flees (nothing happens)
-    #         self.attacker.stats["resolve"] -= Constants.FAIL_STAT_PENALTY
-    #         self.defender.stats["resolve"] -= Constants.FAIL_STAT_PENALTY
-    #
-    #         return utils.Outcome.DRAW
