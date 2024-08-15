@@ -10,7 +10,7 @@ class Constants:
     MESSAGES_JSON = "assets/announcements.json"  # where to pull announcement messages from
 
     ANNUAL_EVENTS_LOWER_BOUND = 2
-    ANNUAL_EVENTS_UPPER_BOUND = 8
+    ANNUAL_EVENTS_UPPER_BOUND = 6
 
     with open(MESSAGES_JSON, 'r') as f:
         MESSAGES = json.load(f)

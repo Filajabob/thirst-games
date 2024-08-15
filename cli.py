@@ -9,6 +9,7 @@ game = Game(utils.PlayerSet.load(input("Insert Player Set path: ")), 2024)
 game.start()
 
 while game.can_run():
+    print(f"Year: {game.year}\n")
     events = game.rotate()
 
     for event in events:

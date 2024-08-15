@@ -22,3 +22,14 @@ class Player:
             "age": self.age,
             "traits": [trait.serialize() for trait in self.traits]
         }
+
+    def awakened_traits(self) -> list[utils.Trait]:
+        """Returns a list of all awakened Traits that this Player has."""
+        return [trait for trait in self.traits if trait.awakened]
+
+    def stats_with_traits(self):
+        """Returns the Player's stats, adjusted with Traits."""
+        adjusted_stats = self.stats
+
+        for trait in self.awakened_traits():
+            for stat, adjustment

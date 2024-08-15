@@ -11,14 +11,15 @@
       "{a} used Domain Expansion: Benevolent Shrine. It was super effective!", "{a} sliced off {d}'s head with a sword.",
       "{d} got a 'spear' inserted into their rectum. ;)", "{a} used Rock. {d} used Scissors."],
     "defender_win": ["{d} gets mad and kills {a}.", "{d} turns around and farts on {a}. Disgusting!",
-      "{df}: Would you lose?\n{af}: Nah, I'd win\n{a} got completely fisted by {d}.",
+      "{df}: Would you lose?\n{af}: Nah, I'd win.\n{a} got completely fisted by {d}.",
       "As {af} charged at {df}, {df} suddenly screamed something.\n{df}: No, please {al}-senpai! Spare me!\n{af}, flustered, fainted into a convenient {af}-sized hole.",
       "{d} used Love Breathing: Nineth Form: Instant Love! {a} faints. {df} is now... oh god"],
     "attacker_flees": ["{a} got the fuck out", "Although {af} started this mess, now they're getting out. p*ssy"],
     "defender_flees": ["{d} got the fuck out", "{af} used Cursed Technique: Freaky. {df} ran away."],
     "no_outcome": {
       "attackers_turn": ["{a} tried swinging a sword but got blocked by {d}.", "{df} used Cursed Technique: Limited. {af} got flustered.",
-      "{a} used Rock. {d} used Rock.", "{d} used HAIKYUUU!!!!!! What will {af} do?", "Right as {df} aimed their bow, {af} took out their Death Note."],
+      "{a} used Rock. {d} used Rock.", "{d} used HAIKYUUU!!!!!! What will {af} do?", "Right as {df} aimed their bow, {af} took out their Death Note.",
+      "{a} used Domain Expansion: Benevolent Shrine. It did jack shit cause bro is not Sukuna"],
       "defenders_turn": ["{d} tried farting, but {a} blocked their nose in time.",
         "{af} started flirting. Is {df} gonna be able to resist those eyes?",
         "Mid-swing, {af} evaded and started Total Distracted Breathing."]
