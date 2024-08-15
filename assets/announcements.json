@@ -4,7 +4,7 @@
       "Welcome to my malevolent shrine, The Thirst Games", "Welcome to Skibidi Thirst Games"],
     "combat_start": ["{a} spots {d}.", "{a} caught {d} lackin", "{a} stalks {d}. Lets take a closer look.",
       "While enjoying a bit of roasted goose liver, {a} notices {d} trying to.. what is {df} doing?! hell nahhh",
-      "While enjoying a bit of roasted goose cock, {a} notices a {df} prancing around. Lets take a closer look.", "{a} detects a {d} on their nerd detector."]
+      "While enjoying a bit of roasted goose cock, {a} notices a {df} prancing around. Lets take a closer look.", "{a} detects a {d} on their nerd detector.", "{a} notices {d}, and charges towards him. He begins to speak.\n{a}:Everything that you thought had meaning: every hope, dream, or moment of happiness. None of it matters as you lie bleeding out on the battlefield. None of it changes what a speeding rock does to a body, we all die. But does that mean our lives are meaningless? Does that mean that there was no point in our being born? Would you say that of our slain comrades? What about their lives? Were they meaningless?... They were not! Their memory serves as an example to us all! The courageous fallen! The anguished fallen! Their lives have meaning because we the living refuse to forget them! And as we ride to certain death, we trust our successors to do the same for us! Because my soldiers do not buckle or yield when faced with the cruelty of this world! My soldiers push forward! My soldiers scream out! My soldiers RAAAAAGE!"]
   },
   "outcomes": {
     "attacker_win": ["{af} {al} kills {df} {dl} without mercy.",
@@ -22,15 +22,14 @@
     "no_outcome": {
       "attackers_turn": ["{a} tried swinging a sword but got blocked by {d}.", "{df} used their almighty cock technique. {af} got flustered.",
       "{a} used Rock. {d} used Rock.", "{d} used HAIKYUUU!!!!!! What will {af} do?", "Right as {df} aimed their bow, {af} took out their Death Note.",
-      "{a} used Domain Expansion: Benevolent Shrine. It did jack shit cause bro is not Sukuna..."],
+      "{a} used Domain Expansion: Benevolent Shrine. It did jack shit cause bro is not Sukuna, even if they were, eh..."],
       "defenders_turn": ["{d} tried farting, but {a} blocked their nose in time.",
         "{af} started flirting. Is {df} gonna be able to resist those eyes?",
-        "Mid-swing, {af} evaded and started Total Distracted Breathing.", "{d} is going to finish this off, right?"]
+        "Mid-swing, {af} evaded and started Total Distracted Breathing.", "{d} is going to finish this off, right? Sike, {d} dipped"]
     },
     "draw": ["{a} and {d} make amends and make out.",
       "{df}: Yo, I'm kinda tired\n{af}: Yeah, same\nThey lived happily ever after.", "{a} ran the fuck away.",
       "{af} pulled out his Drake, causing {df} to run away.", "Make sure to buy some Thirst Games merch! Oh and they both ran away",
-      "{a}: 天と地を通じて、私だけが名誉ある者です\n{d}: おい！ばか！なぜ今日本語で話しているのですか！\n{a}:まったくその通りだ。まったくもってむいんだ。どんな夢や希望を持っていても、幸福な人生を迎えることができたとしても、私からからだを打たれても、オナジだ。ひとはいづれしぬ。\nなら人生には自分がいないのか?ソモソモウマレテキタコトにはイミはいなかったか?\nシンダ仲間もそうなのか?あの兵たちも夢だったのか?\nいや、ちがう！\nあの兵士たちに会いに来るのはワレワレだ！あの憂鬱なシーシャ！あはれなシーシャ！\n思う事が出来るのは…聖者であるワレワレだ！\nワレワレはここで死を継ぐの聖者に誓いを立てる！それこそゆいいつ。\nこの素晴らしい世界に祝福を!\nヘイシよイカれ！ヘイシよサケベ！高江平史.\n{d} left before {a} could finish their speech, its a draw.",
       "By the way, this game is sponsored by Raid Shadow Legends- oh they just left. Aww man.",
       "As the fight ensues, {af} pauses and speaks.\n{a}: Why must we fight? I think we are in some game.\n{d}: Yunno what, yeah. I've been suspecting that...\n{a}: Nevermind, its a stupid theory. Do you wanna get some starbucks?\n{d}: I'm down!"]
   }
