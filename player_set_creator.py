@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import random
 from player import Player
 import utils
 
@@ -39,6 +40,17 @@ while True:
         if trait_name == '':
             break
 
+        if trait_name == "random":
+            trait_type = random.choice(["PassiveTrait", "PermanentTrait"])
+            traits_set = trait_templates[trait_type]
+
+            if trait_type == "PassiveTrait":
+                traits.append(utils.PassiveTrait(**random.choice(list(traits_set.values()))))
+            else:
+                traits.append(utils.PermanentTrait(**random.choice(list(traits_set.values()))))
+
+            break
+
         trait_type = input("Insert trait type (i.e. PassiveTrait): ")
         trait_data = trait_templates[trait_type][trait_name]
 
@@ -52,7 +64,7 @@ while True:
             "attack": normal(),
             "defense": normal(),
             "resolve": normal()
-        }, 18, traits=traits, death_age=round(rng.normal(70, 3))
+        }, rng.normal(30, 3), traits=traits, death_age=round(rng.normal(70, 3))
     )
     )
 

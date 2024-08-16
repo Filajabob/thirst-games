@@ -68,13 +68,15 @@ class Constants:
 
     MESSAGES_JSON = "assets/announcements.json"  # where to pull announcement messages from
 
-    ANNUAL_EVENTS_LOWER_BOUND = 2
-    ANNUAL_EVENTS_UPPER_BOUND = 6
+    ANNUAL_EVENTS_LOWER_BOUND = 1
+    ANNUAL_EVENTS_UPPER_BOUND = 3
 
     with open(MESSAGES_JSON, 'r') as f:
         MESSAGES = json.load(f)
 
-    BASE_AWAKENING_CHANCE = 0.25
+    BASE_AWAKENING_CHANCE = 0.2  # After killing an opponent, the chance of an AwakeningEvent
+
+    TRAIT_STEAL_CHANCE = 0.05  # After killing an opponent, the chance of stealing a Trait
 
     DEATH_EVENT_CHANCE = 0.1  # The chance we should have a NaturalDeathEvent.
     DEATH_EVENT_DEATH_RATE = 0.1  # After starting a DeathEvent, the chance of dying

@@ -26,7 +26,7 @@ class Game:
         events = []
 
         for _ in range(random.randint(Constants.ANNUAL_EVENTS_LOWER_BOUND, Constants.ANNUAL_EVENTS_UPPER_BOUND)):
-            if utils.random_weighted_boolean(Constants.DEATH_EVENT_CHANCE):
+            if utils.random_chance(Constants.DEATH_EVENT_CHANCE) and self.player_set.elderly_players():
                 events.append(NaturalDeathEvent(self.player_set))
                 continue
 

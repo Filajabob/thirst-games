@@ -1,4 +1,4 @@
-from .random_weighted_boolean import random_weighted_boolean
+from .random_chance import random_chance, advantage_chance
 from .player_set import PlayerSet
 from .outcome import Outcome
 from .typewrite import typewrite

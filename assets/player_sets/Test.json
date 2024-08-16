@@ -1,48 +1,30 @@
 [
     {
-        "given_name": "Satoru",
-        "surname": "Gojo",
+        "given_name": "Hange",
+        "surname": "Zo\u00eb",
         "stats": {
-            "attack": 0.5383095142362034,
-            "defense": 0.7847953226329984,
-            "resolve": 0.3748761890469252
+            "attack": 0.5044840978892025,
+            "defense": 0.5620314923187224,
+            "resolve": 0.6161661449807255
         },
         "age": 18,
-        "death_age": null,
+        "death_age": 70,
         "raw_traits": {
-            "PermanentTrait": [
-                {
-                    "name": "Steroids",
-                    "stat_mods": {},
-                    "description": "",
-                    "awakened": false,
-                    "parent_trait": null,
-                    "awakening_chance": 0.2
-                }
-            ],
             "PassiveTrait": [
                 {
-                    "name": "Natural Experience",
-                    "owner_stat_mods": {},
-                    "opponent_stat_mods": {},
-                    "description": "",
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
                     "awakened": false,
                     "parent_trait": null,
                     "awakening_chance": 0.2
                 }
             ]
         }
-    },
-    {
-        "given_name": "Yuji",
-        "surname": "Itadori",
-        "stats": {
-            "attack": 0.8087383996321356,
-            "defense": 0.39186710238317124,
-            "resolve": 0.620884784683674
-        },
-        "age": 18,
-        "death_age": null,
-        "raw_traits": {}
     }
 ]

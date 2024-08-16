@@ -1,7 +1,7 @@
 from game import Game
 import utils
 import time
-from event import Event, CombatEvent, AwakeningEvent, NaturalDeathEvent
+from event import Event, CombatEvent, AwakeningEvent, NaturalDeathEvent, TraitStealEvent
 
 print("Welcome to the Thirst Games.\n")
 
@@ -31,17 +31,25 @@ while game.can_run():
                     awakened_trait = awakening_event.start()
 
                     if awakened_trait:
-                        utils.typewrite(f"{outcome.winner().full_name} had Awakened '{awakened_trait.name}'!")
-                        utils.typewrite(awakened_trait.description)
+                        utils.typewrite(f"{outcome.winner().full_name} has Awakened '{awakened_trait.name}'!")
+                        utils.typewrite(f'{awakened_trait.name}: "{awakened_trait.description}"')
                     else:
                         utils.typewrite("The Awakening failed.")
+                if outcome.trait_steal:
+                    trait_steal_event = TraitStealEvent(outcome.winner(), outcome.loser())
+                    stolen_trait = trait_steal_event.start()
+
+                    utils.typewrite(f"{outcome.winner().full_name} is stealing a Trait!")
+                    utils.typewrite(f"{outcome.winner().full_name} has stolen {stolen_trait.name}! "
+                                    f"The Trait will reset to Dormant.")
+                    utils.typewrite(f'{stolen_trait.name}: "{stolen_trait.description}"')
 
                 if outcome.result is not utils.Outcome.NO_OUTCOME:
                     break
 
             print("")
         elif isinstance(event, NaturalDeathEvent):
-            if not game.can_run():
+            if not game.can_run() or not event.can_run():
                 break
 
             died = event.start()
@@ -49,7 +57,8 @@ while game.can_run():
             utils.typewrite(f"{event.player.full_name} has contracted an illness due to their old age! ({event.player.age} y/o)")
 
             if died:
-                utils.typewrite(f"Rest in Peace, {event.player.full_name}. They died to natural causes. They died at {event.player.age} years old.")
+                utils.typewrite(f"Rest in Peace, {event.player.full_name}. They died to natural causes. "
+                                f"They died at {event.player.age} years old.")
             else:
                 utils.typewrite(f"{event.player.full_name} has recovered fully.")
 
