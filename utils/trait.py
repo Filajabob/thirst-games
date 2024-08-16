@@ -4,7 +4,7 @@ import json
 
 class Trait:
     def __init__(self, name: str, owner_stat_mods: dict, opponent_stat_mods,
-                 description=None, awakened=False, parent_trait=None, awakening_chance=0.2):
+                 description=None, awakened=False, parent_trait=None, awakening_chance=0.2, stars: int=1):
         """
         A Trait is a property of a Player that modifies the stats of the owner of the Trait and/or the opponent for the
         duration of a Combat Event. Each Trait is technically unique to each Player, though they may share names/characteristics
@@ -40,7 +40,9 @@ class PassiveTrait(Trait):
 class PermanentTrait(PassiveTrait):
     def __init__(self, name: str, stat_mods, description=None, awakened=False, parent_trait=None, awakening_chance=0.2):
         """
-        A PassiveTrait which permanently changes the owner's stats.
+        A PassiveTrait which permanently changes the owner's stats. The key difference from a PassiveTrait is that a
+        PermanentTrait does not change an opponent's stats. PassiveTraits only activate during Combat.
+        More differences may be added in the future.
         :param name:
         :param stat_mods:
         :param description:

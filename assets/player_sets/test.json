@@ -8,7 +8,7 @@
             "resolve": 0.5
         },
         "age": 18,
-        "death_age": null,
+        "death_age": 18,
         "raw_traits": {
             "PassiveTrait": [
                 {
@@ -34,7 +34,7 @@
             "resolve": 0.5
         },
         "age": 18,
-        "death_age": null,
+        "death_age": 18,
         "raw_traits": {
             "PassiveTrait": [
                 {

@@ -1,7 +1,7 @@
 from game import Game
 import utils
 import time
-from event import Event, CombatEvent, AwakeningEvent
+from event import Event, CombatEvent, AwakeningEvent, NaturalDeathEvent
 
 print("Welcome to the Thirst Games.\n")
 
@@ -16,8 +16,10 @@ while game.can_run():
         if isinstance(event, CombatEvent):
             if not game.can_run():
                 break
+
             event.start()
             utils.typewrite(event.start_message())
+
             while True:
                 outcome = event.rotate()
 
@@ -38,5 +40,17 @@ while game.can_run():
                     break
 
             print("")
+        elif isinstance(event, NaturalDeathEvent):
+            if not game.can_run():
+                break
+
+            died = event.start()
+
+            utils.typewrite(f"{event.player.full_name} has contracted an illness due to their old age! ({event.player.age} y/o)")
+
+            if died:
+                utils.typewrite(f"Rest in Peace, {event.player.full_name}. They died to natural causes. They died at {event.player.age} years old.")
+            else:
+                utils.typewrite(f"{event.player.full_name} has recovered fully.")
 
 utils.typewrite(f"{game.player_set.players[0].full_name} is the winner of the Thirst Games!")

@@ -104,7 +104,6 @@ class Player:
 
     def apply_outcome_to_stats(self, outcome: utils.Outcome):
         """Based on an Outcome from a CombatEvent, apply changes to a Player's stats"""
-        print(self.full_name, self.stats)
         if outcome.result:
             # Combat has ended, use Constants.OUTCOME_STAT_CHANGES
             if outcome.attacker == self:
@@ -126,5 +125,3 @@ class Player:
                 changes = changes["defender"]
 
         self.apply_outcome_stat_changes(changes, outcome)
-
-        print(self.full_name, self.stats)

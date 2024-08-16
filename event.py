@@ -1,4 +1,3 @@
-import player
 import random
 from constants import Constants
 import utils
@@ -125,7 +124,23 @@ class AwakeningEvent(PersonalEvent):
 
 
 class NaturalDeathEvent(PersonalEvent):
-    pass
+    def __init__(self, player_set):
+        super().__init__(player_set)
+        self.player = None
+
+    def start(self):
+        """Returns True if the player dies to natural causes."""
+        elderly_players = self.player_set.elderly_players()
+        if elderly_players:
+            sick_player = random.choice(elderly_players)
+
+        self.player = sick_player
+
+        if utils.random_weighted_boolean(Constants.DEATH_EVENT_DEATH_RATE):
+            self.player_set.kill(sick_player)
+            return True
+        else:
+            return False
 
 
 class MatingEvent(Event):

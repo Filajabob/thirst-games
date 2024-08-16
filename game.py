@@ -1,5 +1,5 @@
 import random
-from event import Event, CombatEvent
+from event import Event, CombatEvent, NaturalDeathEvent
 import utils
 from constants import Constants
 
@@ -26,6 +26,10 @@ class Game:
         events = []
 
         for _ in range(random.randint(Constants.ANNUAL_EVENTS_LOWER_BOUND, Constants.ANNUAL_EVENTS_UPPER_BOUND)):
+            if utils.random_weighted_boolean(Constants.DEATH_EVENT_CHANCE):
+                events.append(NaturalDeathEvent(self.player_set))
+                continue
+
             events.append(CombatEvent(self.player_set))  # more event types to be added
 
         return events

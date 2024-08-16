@@ -31,3 +31,7 @@ class PlayerSet:
         players = [Player(**serialized_player) for serialized_player in serialized_players]
 
         return PlayerSet(players)
+
+    def elderly_players(self):
+        """Returns a list of players who are at or past their death_age"""
+        return [player for player in self.players if player.age >= player.death_age]

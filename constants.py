@@ -75,3 +75,6 @@ class Constants:
         MESSAGES = json.load(f)
 
     BASE_AWAKENING_CHANCE = 0.25
+
+    DEATH_EVENT_CHANCE = 0.1  # The chance we should have a NaturalDeathEvent.
+    DEATH_EVENT_DEATH_RATE = 0.1  # After starting a DeathEvent, the chance of dying
