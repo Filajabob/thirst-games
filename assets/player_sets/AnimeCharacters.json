@@ -1,0 +1,182 @@
+[
+    {
+        "given_name": "Aqua",
+        "surname": "Hoshino",
+        "stats": {
+            "attack": 0.4696794151826539,
+            "defense": 0.4335297030303831,
+            "resolve": 0.5780718321081778
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Ruby",
+        "surname": "Hoshino",
+        "stats": {
+            "attack": 0.603472593292776,
+            "defense": 0.6853212683469669,
+            "resolve": 0.41727963939016044
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Ai",
+        "surname": "Hoshino",
+        "stats": {
+            "attack": 0.6186223454169759,
+            "defense": 0.41468942612794496,
+            "resolve": 0.5626813539133134
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Akane",
+        "surname": "Kurokawa",
+        "stats": {
+            "attack": 0.48981864803481,
+            "defense": 0.5602602226533754,
+            "resolve": 0.3236673641909169
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Kana",
+        "surname": "Arima",
+        "stats": {
+            "attack": 0.3304691510165044,
+            "defense": 0.4216026652554676,
+            "resolve": 0.3355469032092473
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Loid",
+        "surname": "Forger",
+        "stats": {
+            "attack": 0.7439349181004742,
+            "defense": 0.4383941505567341,
+            "resolve": 0.44875428123495537
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Yor",
+        "surname": "Forger",
+        "stats": {
+            "attack": 0.6606571770721394,
+            "defense": 0.8255958123474687,
+            "resolve": 0.44090203783022397
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Anya",
+        "surname": "Forger",
+        "stats": {
+            "attack": 0.6676281032560186,
+            "defense": 0.3831380318876044,
+            "resolve": 0.4521382457615107
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Eren",
+        "surname": "Jaeger",
+        "stats": {
+            "attack": 0.5538402760042543,
+            "defense": 0.47485219712589816,
+            "resolve": 0.398003273521434
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Mikasa",
+        "surname": "Ackerman",
+        "stats": {
+            "attack": 0.6506047982961642,
+            "defense": 0.5824624708005177,
+            "resolve": 0.33116289017328493
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Levi",
+        "surname": "Ackerman",
+        "stats": {
+            "attack": 0.541696711578596,
+            "defense": 0.2846086023144362,
+            "resolve": 0.5762375674776917
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Armin",
+        "surname": "Arlelt",
+        "stats": {
+            "attack": 0.6456676985738914,
+            "defense": 0.36147666358304875,
+            "resolve": 0.5203387324178667
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Tanjiro",
+        "surname": "Kamado",
+        "stats": {
+            "attack": 0.6652512593000244,
+            "defense": 0.560138728349881,
+            "resolve": 0.4100297508110945
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Yuji",
+        "surname": "Itadori",
+        "stats": {
+            "attack": 0.8938995760858579,
+            "defense": 0.3488323585917158,
+            "resolve": 0.6570295083532969
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Satoru",
+        "surname": "Gojo",
+        "stats": {
+            "attack": 0.2898111931125994,
+            "defense": 0.4509794022394073,
+            "resolve": 0.767081465408711
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Bocchi",
+        "surname": "the Rock",
+        "stats": {
+            "attack": 0.3571556983324823,
+            "defense": 0.45207137789089785,
+            "resolve": 0.7401986387947745
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Gon",
+        "surname": "Freecss",
+        "stats": {
+            "attack": 0.6445908447009323,
+            "defense": 0.30854005196529205,
+            "resolve": 0.20802425388556467
+        },
+        "age": 18
+    },
+    {
+        "given_name": "Killua",
+        "surname": "Zoldyck",
+        "stats": {
+            "attack": 0.6974858283314883,
+            "defense": 0.201598255465204,
+            "resolve": 0.25889620076679565
+        },
+        "age": 18
+    }
+]

@@ -1,0 +1,58 @@
+{
+  "PassiveTrait": {
+    "Aura":
+    {
+      "name": "Aura",
+      "owner_stat_mods": {},
+      "opponent_stat_mods": {
+        "resolve": -0.15
+      },
+      "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+      "awakened": false,
+      "awakening_chance": 0.2
+    },
+    "Negative Aura":
+    {
+      "name": "Negative Aura",
+      "owner_stat_mods": {
+        "resolve": 0.1
+      },
+      "opponent_stat_mods": {
+        "resolve": 0.3
+      },
+      "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+      "awakened": false,
+      "awakening_chance": 0.2
+    }
+  },
+  "PermanentTrait": {
+    "Type O Negative Blood":
+    {
+      "name": "Type O Negative Blood",
+      "stat_mods": {},
+      "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+      "awakened": false,
+      "awakening_chance": 0.2
+    },
+    "Infinity":
+    {
+      "name": "Infinity",
+      "stat_mods": {
+        "defense": 0.269
+      },
+      "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+      "awakened": false,
+      "awakening_chance": 0.2
+    },
+    "Dominance of the Earth":
+    {
+      "name": "Dominance of the Earth",
+      "stat_mods": {
+        "attack": 0.01
+      },
+      "description": "Gives attack buffs based on defense.",
+      "awakened": false,
+      "awakening_chance": 0.2
+    }
+  }
+}

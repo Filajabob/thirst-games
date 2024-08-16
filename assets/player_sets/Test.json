@@ -1,0 +1,48 @@
+[
+    {
+        "given_name": "Satoru",
+        "surname": "Gojo",
+        "stats": {
+            "attack": 0.5383095142362034,
+            "defense": 0.7847953226329984,
+            "resolve": 0.3748761890469252
+        },
+        "age": 18,
+        "death_age": null,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Steroids",
+                    "stat_mods": {},
+                    "description": "",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ],
+            "PassiveTrait": [
+                {
+                    "name": "Natural Experience",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {},
+                    "description": "",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Yuji",
+        "surname": "Itadori",
+        "stats": {
+            "attack": 0.8087383996321356,
+            "defense": 0.39186710238317124,
+            "resolve": 0.620884784683674
+        },
+        "age": 18,
+        "death_age": null,
+        "raw_traits": {}
+    }
+]
