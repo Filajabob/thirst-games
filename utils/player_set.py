@@ -34,4 +34,10 @@ class PlayerSet:
 
     def elderly_players(self):
         """Returns a list of players who are at or past their death_age"""
-        return [player for player in self.players if player.age >= player.death_age]
+        elderly_players = []
+        for player in self.players:
+            if player.death_age:
+                if player.age >= player.death_age:
+                    elderly_players.append(player)
+
+        return elderly_players

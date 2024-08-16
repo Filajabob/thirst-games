@@ -1,8 +1,12 @@
+import json
 import numpy as np
 from player import Player
 import utils
 
 rng = np.random.default_rng()
+
+with open("assets/templates/traits.json", 'r') as f:
+    trait_templates = json.load(f)
 
 
 def normal():
@@ -15,6 +19,7 @@ def normal():
 
     return num
 
+
 players = []
 
 print("Leave blank and press enter to quit.")
@@ -26,12 +31,28 @@ while True:
 
     surname = input("Surname: ")
 
+    traits = []
+
+    while True:
+        trait_name = input("Insert trait name (leave blank to exit): ")
+
+        if trait_name == '':
+            break
+
+        trait_type = input("Insert trait type (i.e. PassiveTrait): ")
+        trait_data = trait_templates[trait_type][trait_name]
+
+        if trait_type == "PassiveTrait":
+            traits.append(utils.PassiveTrait(**trait_data))
+        elif trait_type == "PermanentTrait":
+            traits.append(utils.PermanentTrait(**trait_data))
+
     players.append(Player(
         given_name, surname, {
             "attack": normal(),
             "defense": normal(),
             "resolve": normal()
-        }, 18, traits=[utils.PassiveTrait("Natural Experience", {"resolve": 0.2}, {}, )]
+        }, 18, traits=traits, death_age=round(rng.normal(70, 3))
     )
     )
 

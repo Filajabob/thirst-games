@@ -133,6 +133,8 @@ class NaturalDeathEvent(PersonalEvent):
         elderly_players = self.player_set.elderly_players()
         if elderly_players:
             sick_player = random.choice(elderly_players)
+        else:
+            return
 
         self.player = sick_player
 

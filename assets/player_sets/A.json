@@ -1,0 +1,14 @@
+[
+    {
+        "given_name": "A",
+        "surname": "Guy",
+        "stats": {
+            "attack": 0.4014868745573496,
+            "defense": 0.45182762100331564,
+            "resolve": 0.5544614253304488
+        },
+        "age": 18,
+        "death_age": 66.65336120062001,
+        "raw_traits": {}
+    }
+]

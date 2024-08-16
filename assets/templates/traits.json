@@ -1,4 +1,23 @@
 {
-  "PassiveTrait": [],
-  "PermanentTrait": []
+  "PassiveTrait": {
+    "Natural Experience":
+    {
+      "name": "Natural Experience",
+      "owner_stat_mods": {},
+      "opponent_stat_mods": {},
+      "description": "",
+      "awakened": false,
+      "awakening_chance": 0.2
+    }
+},
+  "PermanentTrait": {
+    "Steroids":
+    {
+      "name": "Steroids",
+      "stat_mods": {},
+      "description": "",
+      "awakened": false,
+      "awakening_chance": 0.2
+    }
+}
 }

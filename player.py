@@ -47,7 +47,6 @@ class Player:
 
     def separate_serialize_traits(self) -> Dict[str, List[utils.Trait]]:
         separated_traits = {}
-        print(self.traits)
         for trait in self.traits:
             if type(trait).__name__ not in separated_traits.keys():
                 separated_traits[type(trait).__name__] = [trait.serialize()]
