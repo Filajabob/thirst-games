@@ -1,11 +1,70 @@
 import json
 
-
 class Constants:
-    ATTACKER_WIN_STAT_BOOST = 0.01
-    DEFENDER_WIN_STAT_BOOST = 0.01
+    # Applies changes proportionally based on opponent's stats. If negative, applies changes based on own stats.
+    OUTCOME_STAT_CHANGES = {
+        2: {  # attacker win
+            "attacker": {
+                "attack": 0.03,
+                "resolve": 0.01
+            },
+            "defender": {}
+        },
+        1: {  # defender flees
+            "attacker": {
+                "attack": 0.01,
+                "resolve": 0.02
+            },
+            "defender": {
+                "defense": -0.01,
+                "resolve": -0.02
+            }
+        },
+        0: {  # draw
+            "attacker": {},
+            "defender": {}
+        },
+        -1: {  # attacker flees
+            "attacker": {
+                "attack": -0.01,
+                "resolve": -0.02
+            },
+            "defender": {
+                "defense": 0.01,
+                "resolve": 0.02
+            }
+        },
+        -2: {  # defender win
+            "attacker": {},
+            "defender": {
+                "defense": 0.03,
+                "resolve": 0.01
+            }
+        }
+    }
 
-    FAIL_STAT_PENALTY = 0.01  # penalty to statsfor fleeing or failing
+    NO_OUTCOME_STAT_CHANGES = {
+        "attacker_fail": {
+            "attacker": {
+                "attack": -0.005,
+                "resolve": -0.01
+            },
+            "defender": {
+                "defense": 0.005,
+                "resolve": 0.01
+            }
+        },
+        "defender_fail": {
+            "attacker": {
+                "attack": 0.005,
+                "resolve": 0.01
+            },
+            "defender": {
+                "defense": -0.005,
+                "resolve": -0.01
+            }
+        }
+    }
 
     MESSAGES_JSON = "assets/announcements.json"  # where to pull announcement messages from
 

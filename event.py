@@ -43,7 +43,12 @@ class CombatEvent(Event):
         self.defender = players[1]
 
     def outcome(self, result: int, *, awakening=False) -> Outcome:
-        return Outcome(self.attacker, self.defender, result, self.turn, awakening=awakening)
+        outcome = Outcome(self.attacker, self.defender, result, self.turn, awakening=awakening)
+
+        self.attacker.apply_outcome_to_stats(outcome)
+        self.defender.apply_outcome_to_stats(outcome)
+
+        return outcome
 
     def insert_names(self, msg):
         msg = msg.replace('{a}', self.attacker.full_name)

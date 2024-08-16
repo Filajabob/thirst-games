@@ -61,6 +61,19 @@ class Outcome:
 
         return self.insert_names(raw_msg)
 
+    def attacker_failed(self) -> bool:
+        if self.result is self.NO_OUTCOME and self.turn % 2 == 0:
+            return True
+        else:
+            return False
+
+    def defender_failed(self) -> bool:
+        if self.result is self.NO_OUTCOME and self.turn % 2 == 1:
+            return True
+        else:
+            return False
+
+
     DRAW = 0
 
     ATTACKER_FLEES = -1

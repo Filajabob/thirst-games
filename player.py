@@ -1,6 +1,7 @@
 import json
 from typing import List, Dict
 import utils
+from constants import Constants
 
 trait_module = __import__("utils.trait")
 
@@ -87,3 +88,43 @@ class Player:
     def apply_perm_trait(self, trait):
         """Applies a PermanentTrait to the Player's stats."""
         self.stats = self.adjust_stats(self.stats, trait.stat_mods)
+
+    def apply_outcome_stat_changes(self, changes: dict, outcome: utils.Outcome):
+        """Applies a given dict of percentages to stats. If positive, takes from the opponent. If negative, takes from self."""
+        if outcome.attacker == self:
+            opponent = outcome.defender
+        else:
+            opponent = outcome.attacker
+
+        for stat, change in changes.items():
+            if change > 0:
+                self.stats[stat] += opponent.stats[stat] * change
+            elif change < 0:
+                self.stats[stat] += self.stats[stat] * change
+
+    def apply_outcome_to_stats(self, outcome: utils.Outcome):
+        """Based on an Outcome from a CombatEvent, apply changes to a Player's stats"""
+        print(self.full_name, self.stats)
+        if outcome.result:
+            # Combat has ended, use Constants.OUTCOME_STAT_CHANGES
+            if outcome.attacker == self:
+                # I am the attacker
+                changes = Constants.OUTCOME_STAT_CHANGES[outcome.result]["attacker"]
+            else:
+                # I am the defender
+                changes = Constants.OUTCOME_STAT_CHANGES[outcome.result]["defender"]
+        else:
+            # Combat in progress, use Constants.NO_OUTCOME_STAT_CHANGES
+            if outcome.attacker_failed():
+                changes = Constants.NO_OUTCOME_STAT_CHANGES["attacker_fail"]
+            else:
+                changes = Constants.NO_OUTCOME_STAT_CHANGES["defender_fail"]
+
+            if outcome.attacker == self:
+                changes = changes["attacker"]
+            else:
+                changes = changes["defender"]
+
+        self.apply_outcome_stat_changes(changes, outcome)
+
+        print(self.full_name, self.stats)
