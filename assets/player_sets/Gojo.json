@@ -1,0 +1,27 @@
+[
+    {
+        "given_name": "Gojo",
+        "surname": "Satoru",
+        "stats": {
+            "attack": 0.3670129600596041,
+            "defense": 0.6477057716795813,
+            "resolve": 0.6219563009065334
+        },
+        "age": 18,
+        "death_age": 73,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    }
+]

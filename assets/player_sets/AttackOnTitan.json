@@ -1,0 +1,866 @@
+[
+    {
+        "given_name": "Hange",
+        "surname": "Zo\u00eb",
+        "stats": {
+            "attack": 0.26031019230598723,
+            "defense": 0.30430805372979175,
+            "resolve": 0.4239575911039459
+        },
+        "age": 26.505997830383905,
+        "death_age": 70,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Sasha",
+        "surname": "Braus",
+        "stats": {
+            "attack": 0.48078242191980924,
+            "defense": 0.7352231371422187,
+            "resolve": 0.3175943470681175
+        },
+        "age": 31.018633746122436,
+        "death_age": 80,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Dominance of the Earth",
+                    "stat_mods": {
+                        "attack": 0.01
+                    },
+                    "description": "Gives attack buffs based on defense.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Erwin",
+        "surname": "Smith",
+        "stats": {
+            "attack": 0.5518518291845146,
+            "defense": 0.3941145083431378,
+            "resolve": 0.5629229036024932
+        },
+        "age": 33.69148765631591,
+        "death_age": 75,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Marlo",
+        "surname": "Freudenberg",
+        "stats": {
+            "attack": 0.5231660720020138,
+            "defense": 0.47563143103415395,
+            "resolve": 0.6358670205088471
+        },
+        "age": 32.47096436953582,
+        "death_age": 69,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Type O Negative Blood",
+                    "stat_mods": {},
+                    "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Moblit",
+        "surname": "Berner",
+        "stats": {
+            "attack": 0.3817140847503476,
+            "defense": 0.4339914079329642,
+            "resolve": 0.349618202485499
+        },
+        "age": 25.98326718892961,
+        "death_age": 75,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Type O Negative Blood",
+                    "stat_mods": {},
+                    "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Kenny",
+        "surname": "Ackermann",
+        "stats": {
+            "attack": 0.3322108101137905,
+            "defense": 0.16765780214246911,
+            "resolve": 0.2701288778008114
+        },
+        "age": 31.372625399103562,
+        "death_age": 71,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Keith",
+        "surname": "Sadies",
+        "stats": {
+            "attack": 0.7047236573162857,
+            "defense": 0.6206476784856321,
+            "resolve": 0.6184977663711665
+        },
+        "age": 28.799991509124336,
+        "death_age": 70,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Type O Negative Blood",
+                    "stat_mods": {},
+                    "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Marco",
+        "surname": "Bodt",
+        "stats": {
+            "attack": 0.4828716111058925,
+            "defense": 0.5114044088920018,
+            "resolve": 0.4818688966593419
+        },
+        "age": 30.49394195619202,
+        "death_age": 67,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Porco",
+        "surname": "Galliard",
+        "stats": {
+            "attack": 0.5874785398883411,
+            "defense": 0.34725478850774183,
+            "resolve": 0.4949744968945404
+        },
+        "age": 27.23130758162514,
+        "death_age": 71,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Colt",
+        "surname": "Grice",
+        "stats": {
+            "attack": 0.6467635790487309,
+            "defense": 0.5448802540295573,
+            "resolve": 0.4348262576027079
+        },
+        "age": 33.59805455892513,
+        "death_age": 72,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Dominance of the Earth",
+                    "stat_mods": {
+                        "attack": 0.01
+                    },
+                    "description": "Gives attack buffs based on defense.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Bertholdt",
+        "surname": "Hoover",
+        "stats": {
+            "attack": 0.3668119250952663,
+            "defense": 0.45764395177410905,
+            "resolve": 0.660180034929373
+        },
+        "age": 33.00923626671632,
+        "death_age": 68,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Marcel",
+        "surname": "Galliard",
+        "stats": {
+            "attack": 0.3040180700572456,
+            "defense": 0.5426897133795519,
+            "resolve": 0.2927320972141879
+        },
+        "age": 23.722735078123737,
+        "death_age": 69,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Tom",
+        "surname": "Xaver",
+        "stats": {
+            "attack": 0.5493804278838996,
+            "defense": 0.3683474049048594,
+            "resolve": 0.46040159013252413
+        },
+        "age": 32.347455424599914,
+        "death_age": 67,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Eren",
+        "surname": "Kruger",
+        "stats": {
+            "attack": 0.6122332234732895,
+            "defense": 0,
+            "resolve": 0.5451098473505492
+        },
+        "age": 27.12161398800024,
+        "death_age": 71,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Dominance of the Earth",
+                    "stat_mods": {
+                        "attack": 0.01
+                    },
+                    "description": "Gives attack buffs based on defense.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Dhalis",
+        "surname": "Zachary",
+        "stats": {
+            "attack": 0,
+            "defense": 0.46873914230872293,
+            "resolve": 0.41486938907371407
+        },
+        "age": 29.900418357970956,
+        "death_age": 70,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Type O Negative Blood",
+                    "stat_mods": {},
+                    "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Historia",
+        "surname": "Reiss",
+        "stats": {
+            "attack": 0.25275821007181337,
+            "defense": 0.7406754344300095,
+            "resolve": 0.37398262362774404
+        },
+        "age": 37.03941741582155,
+        "death_age": 64,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Rod",
+        "surname": "Reiss",
+        "stats": {
+            "attack": 0.6482625774493967,
+            "defense": 0.7851182487164687,
+            "resolve": 0.32342573281415976
+        },
+        "age": 30.52697025649441,
+        "death_age": 67,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Type O Negative Blood",
+                    "stat_mods": {},
+                    "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Willy",
+        "surname": "Tybur",
+        "stats": {
+            "attack": 0.3619271839601709,
+            "defense": 0.5057763217026228,
+            "resolve": 0.4706218671280061
+        },
+        "age": 32.046922959671214,
+        "death_age": 69,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Ymir",
+        "surname": "Fritz",
+        "stats": {
+            "attack": 0.4521610219858088,
+            "defense": 0.568228192605896,
+            "resolve": 0.5954191312546059
+        },
+        "age": 25.194867047983465,
+        "death_age": 68,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Mikasa",
+        "surname": "Ackermann",
+        "stats": {
+            "attack": 0.5416160862721026,
+            "defense": 0.6549429210304007,
+            "resolve": 0.4890947678008328
+        },
+        "age": 29.90625244444021,
+        "death_age": 65,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Dominance of the Earth",
+                    "stat_mods": {
+                        "attack": 0.01
+                    },
+                    "description": "Gives attack buffs based on defense.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Grisha",
+        "surname": "Jaeger",
+        "stats": {
+            "attack": 0.43682632080116224,
+            "defense": 0.5910034202427296,
+            "resolve": 0.4037604815424934
+        },
+        "age": 29.690372338416918,
+        "death_age": 66,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Carla",
+        "surname": "Jaeger",
+        "stats": {
+            "attack": 0.28901760160474843,
+            "defense": 0.2266330433704366,
+            "resolve": 0.333841805982384
+        },
+        "age": 30.265611057873723,
+        "death_age": 74,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Armin",
+        "surname": "Arlelt",
+        "stats": {
+            "attack": 0.5816804098184641,
+            "defense": 0.6514855712366043,
+            "resolve": 0.5062327451375652
+        },
+        "age": 29.991169674913753,
+        "death_age": 71,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Type O Negative Blood",
+                    "stat_mods": {},
+                    "description": "Type O Negative Blood is the universal blood for transfusions and immune deficient infants, as O- can be donated to any blood type. Those with Type O Negative Blood cells are encouraged donate their blood to their local donation center today! So basically this trait is fuckall useless.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Reiner",
+        "surname": "Braun",
+        "stats": {
+            "attack": 0.5793753455464429,
+            "defense": 0.5639202976183688,
+            "resolve": 0.4980298011176543
+        },
+        "age": 30.920636949255748,
+        "death_age": 77,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Dominance of the Earth",
+                    "stat_mods": {
+                        "attack": 0.01
+                    },
+                    "description": "Gives attack buffs based on defense.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Annie",
+        "surname": "Leonhart",
+        "stats": {
+            "attack": 0.26898721460967384,
+            "defense": 0.5381854584577617,
+            "resolve": 0.53168704194042
+        },
+        "age": 22.98327586245122,
+        "death_age": 66,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Jean",
+        "surname": "Kirschtein",
+        "stats": {
+            "attack": 0.6567675396152355,
+            "defense": 0.4723840564906544,
+            "resolve": 0.5943529408676088
+        },
+        "age": 32.012260641227435,
+        "death_age": 65,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Conny",
+        "surname": "Springer",
+        "stats": {
+            "attack": 0.4969634651514244,
+            "defense": 0.3484974077343407,
+            "resolve": 0.3163511473933066
+        },
+        "age": 28.087561020294032,
+        "death_age": 71,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Levi",
+        "surname": "Ackermann",
+        "stats": {
+            "attack": 0.6187003949965209,
+            "defense": 0.5373544549839768,
+            "resolve": 0.42555454765900025
+        },
+        "age": 27.073324002732605,
+        "death_age": 71,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Pieck",
+        "surname": "Finger",
+        "stats": {
+            "attack": 0.42699609575660347,
+            "defense": 0.31615664827233053,
+            "resolve": 0.42329150978734026
+        },
+        "age": 31.501242458925827,
+        "death_age": 69,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Negative Aura",
+                    "owner_stat_mods": {
+                        "resolve": 0.1
+                    },
+                    "opponent_stat_mods": {
+                        "resolve": 0.3
+                    },
+                    "description": "The reverse trait of aura, which makes opponents feel overconfident, perhaps leading them to their deaths.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Falco",
+        "surname": "Grice",
+        "stats": {
+            "attack": 0.5491962663660457,
+            "defense": 0.37176202279124093,
+            "resolve": 0.6015231234550058
+        },
+        "age": 27.190604524587098,
+        "death_age": 72,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Gabi",
+        "surname": "Braun",
+        "stats": {
+            "attack": 0.22534438720894195,
+            "defense": 0.5803973698113079,
+            "resolve": 0.5259443528492905
+        },
+        "age": 30.864759574684594,
+        "death_age": 70,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Zeke",
+        "surname": "Jaeger",
+        "stats": {
+            "attack": 0.6239604378133168,
+            "defense": 0.2988263340264941,
+            "resolve": 0.4039718635421843
+        },
+        "age": 36.81470361854473,
+        "death_age": 70,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Dominance of the Earth",
+                    "stat_mods": {
+                        "attack": 0.01
+                    },
+                    "description": "Gives attack buffs based on defense.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Eren",
+        "surname": "Jaeger",
+        "stats": {
+            "attack": 0.3642687862101333,
+            "defense": 0.4147466670641408,
+            "resolve": 0.6389251913982574
+        },
+        "age": 33.74014907055549,
+        "death_age": 73,
+        "raw_traits": {
+            "PermanentTrait": [
+                {
+                    "name": "Infinity",
+                    "stat_mods": {
+                        "defense": 0.269
+                    },
+                    "description": "Infinity is the base state of the Limitless and is essentially the power to stop. The Limitless technique operates the same way convergent and divergent sequences do in mathematics. The Infinity is the convergence of an immeasurable series, anything that approaches the infinity slows down and never reaches the user. This is because the technique takes the finite amount of space between the two subjects and divides it an infinite amount of times.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    },
+    {
+        "given_name": "Floch",
+        "surname": "Forster",
+        "stats": {
+            "attack": 0.5551443375136383,
+            "defense": 0.23088199170839424,
+            "resolve": 0.4996452422639592
+        },
+        "age": 29.058659120380028,
+        "death_age": 67,
+        "raw_traits": {
+            "PassiveTrait": [
+                {
+                    "name": "Aura",
+                    "owner_stat_mods": {},
+                    "opponent_stat_mods": {
+                        "resolve": -0.15
+                    },
+                    "description": "Aura gives fear to opponents, even though you might not be the strongest.",
+                    "awakened": false,
+                    "parent_trait": null,
+                    "awakening_chance": 0.2
+                }
+            ]
+        }
+    }
+]

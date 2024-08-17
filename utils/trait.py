@@ -29,6 +29,9 @@ class Trait:
     def awaken(self, owner):
         self.awakened = True
 
+    def unawaken(self):
+        self.awakened = False
+
     def serialize(self):
         return json.loads(jsonpickle.dumps(self, unpicklable=False))
 

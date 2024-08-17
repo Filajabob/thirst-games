@@ -7,7 +7,7 @@ with open(Constants.MESSAGES_JSON, 'r') as f:
 
 
 class Outcome:
-    def __init__(self, attacker, defender, result: int, turn: int, awakening: bool=False):
+    def __init__(self, attacker, defender, result: int, turn: int, *, awakening: bool=False, trait_steal=False):
         """
         Object that represents the outcome of a game.Game rotation
         :param attacker: player.Player: The attacker of a CombatEvent
@@ -20,6 +20,11 @@ class Outcome:
         self.result = result
         self.turn = turn
         self.awakening = awakening
+        self.trait_steal = trait_steal
+
+        if self.result:
+            if not self.loser().traits:
+                self.trait_steal = False
 
     def winner(self):
         if self.result > 0:
@@ -28,6 +33,15 @@ class Outcome:
             return self.defender
         else:
             return None
+
+    def loser(self):
+        if self.result > 0:
+            return self.defender
+        elif self.result < 0:
+            return self.attacker
+        else:
+            return None
+
 
     def insert_names(self, msg):
         msg = msg.replace('{a}', self.attacker.full_name)

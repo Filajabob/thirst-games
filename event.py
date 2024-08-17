@@ -41,8 +41,8 @@ class CombatEvent(Event):
         self.attacker = players[0]
         self.defender = players[1]
 
-    def outcome(self, result: int, *, awakening=False) -> Outcome:
-        outcome = Outcome(self.attacker, self.defender, result, self.turn, awakening=awakening)
+    def outcome(self, result: int, *, awakening=False, trait_steal=False) -> Outcome:
+        outcome = Outcome(self.attacker, self.defender, result, self.turn, awakening=awakening, trait_steal=trait_steal)
 
         self.attacker.apply_outcome_to_stats(outcome)
         self.defender.apply_outcome_to_stats(outcome)
@@ -78,30 +78,36 @@ class CombatEvent(Event):
 
             # Ensure attacker doesn't flee immediately (that would be sad)
             if self.turn != 0:
-                if not utils.random_weighted_boolean((attacker_adjusted_stats["resolve"] + attacker_atk_effect) / 2):
+                if not utils.advantage_chance((attacker_adjusted_stats["resolve"] + attacker_atk_effect) / 2):
                     return self.outcome(Outcome.ATTACKER_FLEES)  # Attacker flees
 
-            if utils.random_weighted_boolean(attacker_atk_effect):
+            if utils.advantage_chance(attacker_atk_effect):
                 # The attacker kills the defender
                 self.player_set.kill(self.defender)
 
-                if utils.random_weighted_boolean(Constants.BASE_AWAKENING_CHANCE):
+                if utils.random_chance(Constants.BASE_AWAKENING_CHANCE):
                     return self.outcome(Outcome.ATTACKER_WIN, awakening=True)
                 else:
+                    if utils.random_chance(Constants.TRAIT_STEAL_CHANCE):
+                        return self.outcome(Outcome.ATTACKER_WIN, trait_steal=True)
+
                     return self.outcome(Outcome.ATTACKER_WIN)
         else:
             # Turn is odd, therefore the defender is attacking
             defender_atk_effect = defender_adjusted_stats["attack"] - attacker_adjusted_stats["defense"]
-            if not utils.random_weighted_boolean((defender_adjusted_stats["resolve"] + defender_atk_effect) / 2):
+            if not utils.advantage_chance((defender_adjusted_stats["resolve"] + defender_atk_effect) / 2):
                 return self.outcome(Outcome.DEFENDER_FLEES)  # Defender flees
 
-            if utils.random_weighted_boolean(defender_atk_effect):
+            if utils.advantage_chance(defender_atk_effect):
                 # The defender kills the attacker
                 self.player_set.kill(self.attacker)
 
-                if utils.random_weighted_boolean(Constants.BASE_AWAKENING_CHANCE):
+                if utils.random_chance(Constants.BASE_AWAKENING_CHANCE):
                     return self.outcome(Outcome.DEFENDER_WIN, awakening=True)
                 else:
+                    if utils.random_chance(Constants.TRAIT_STEAL_CHANCE):
+                        return self.outcome(Outcome.DEFENDER_WIN, trait_steal=True)
+
                     return self.outcome(Outcome.DEFENDER_WIN)
 
         return self.outcome(Outcome.NO_OUTCOME)  # If we reach this point, no one won or fled, so we continue.
@@ -117,7 +123,7 @@ class AwakeningEvent(PersonalEvent):
 
     def start(self):
         for trait in self.awakening_player.dormant_traits():
-            if utils.random_weighted_boolean(trait.awakening_chance):
+            if utils.random_chance(trait.awakening_chance):
                 trait.awaken(self.awakening_player)
 
                 return trait
@@ -127,6 +133,9 @@ class NaturalDeathEvent(PersonalEvent):
     def __init__(self, player_set):
         super().__init__(player_set)
         self.player = None
+
+    def can_run(self):
+        return self.player_set.elderly_players()
 
     def start(self):
         """Returns True if the player dies to natural causes."""
@@ -138,11 +147,25 @@ class NaturalDeathEvent(PersonalEvent):
 
         self.player = sick_player
 
-        if utils.random_weighted_boolean(Constants.DEATH_EVENT_DEATH_RATE):
+        if utils.random_chance(Constants.DEATH_EVENT_DEATH_RATE):
             self.player_set.kill(sick_player)
             return True
         else:
             return False
+
+
+class TraitStealEvent(Event):
+    def __init__(self, stealer, victim):
+        self.stealer = stealer
+        self.victim = victim
+
+    def start(self):
+        stolen_trait = random.choice(self.victim.traits)
+        stolen_trait.unawaken()
+
+        self.stealer.add_trait(stolen_trait)
+
+        return stolen_trait
 
 
 class MatingEvent(Event):
