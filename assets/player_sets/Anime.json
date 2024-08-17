@@ -1,0 +1,386 @@
+[
+    {
+        "given_name": "Naruto",
+        "surname": "Uzumaki",
+        "stats": {
+            "attack": 0.40869155755814757,
+            "defense": 0.5825019718690786,
+            "resolve": 0.6989067426738307
+        },
+        "age": 36.405406937875384,
+        "death_age": 67,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Kakashi",
+        "surname": "Hatake",
+        "stats": {
+            "attack": 0.19092210581479013,
+            "defense": 0.3434550040346499,
+            "resolve": 0.30306312217520803
+        },
+        "age": 33.54914941015931,
+        "death_age": 72,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Monkey D.",
+        "surname": "Luffy",
+        "stats": {
+            "attack": 0.6393130959269865,
+            "defense": 0.5798594849512484,
+            "resolve": 0.35748191029387333
+        },
+        "age": 29.665673489142804,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Light",
+        "surname": "Yagami",
+        "stats": {
+            "attack": 0.3413723168431126,
+            "defense": 0.5493579784090407,
+            "resolve": 0.4271282651308242
+        },
+        "age": 17,
+        "death_age": 68,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Spike",
+        "surname": "Spiegel",
+        "stats": {
+            "attack": 0.4482334984392137,
+            "defense": 0.6461096302683111,
+            "resolve": 0.37448692985472076
+        },
+        "age": 28.00131339277729,
+        "death_age": 66,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Levi",
+        "surname": "Ackerman",
+        "stats": {
+            "attack": 0.4383387399962436,
+            "defense": 0.373339742820835,
+            "resolve": 0.6465564852883365
+        },
+        "age": 32.074235681454624,
+        "death_age": 68,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Rorona",
+        "surname": "Zoro",
+        "stats": {
+            "attack": 0.6614914256598887,
+            "defense": 0.6918364444876695,
+            "resolve": 0.4047375525602185
+        },
+        "age": 30.546411848534017,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Gon",
+        "surname": "Freecss",
+        "stats": {
+            "attack": 0.8171727211496079,
+            "defense": 0.6063128340206432,
+            "resolve": 0.3336856086414194
+        },
+        "age": 12,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Killua",
+        "surname": "Zoldyck",
+        "stats": {
+            "attack": 0.6544551718326337,
+            "defense": 0.36745822233935926,
+            "resolve": 0.5113678327446262
+        },
+        "age": 12,
+        "death_age": 69,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Dio",
+        "surname": "Brando",
+        "stats": {
+            "attack": 0.7219263129887247,
+            "defense": 0.4706670035969827,
+            "resolve": 0.45944749313372324
+        },
+        "age": 25,
+        "death_age": 67,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Jonathan",
+        "surname": "Joestar",
+        "stats": {
+            "attack": 0.6891488113771751,
+            "defense": 0.6685077519561338,
+            "resolve": 0.5284313119324662
+        },
+        "age": 25,
+        "death_age": 72,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Mai",
+        "surname": "Sakurajima",
+        "stats": {
+            "attack": 0.28522192592655304,
+            "defense": 0.5725359208107712,
+            "resolve": 0.4043798036697444
+        },
+        "age": 24.131990381346192,
+        "death_age": 68,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Ichigo",
+        "surname": "Kurosaki",
+        "stats": {
+            "attack": 0.282737740690011,
+            "defense": 0.2964986498696446,
+            "resolve": 0.3827887940631761
+        },
+        "age": 24.06797582377059,
+        "death_age": 72,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Thorfinn",
+        "surname": "Son of Thor",
+        "stats": {
+            "attack": 0.395583218405239,
+            "defense": 0.36899023337891645,
+            "resolve": 0.39192474929615123
+        },
+        "age": 19,
+        "death_age": 68,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Gokuu",
+        "surname": "Son",
+        "stats": {
+            "attack": 0.4886208529895052,
+            "defense": 0.5109388960608449,
+            "resolve": 0.5836156096611832
+        },
+        "age": 23.72783635607005,
+        "death_age": 68,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Sasuke",
+        "surname": "Uchiha",
+        "stats": {
+            "attack": 0.6922757398369672,
+            "defense": 0.540558374653883,
+            "resolve": 0.4593918031979316
+        },
+        "age": 28.530976939208703,
+        "death_age": 74,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Kaguya",
+        "surname": "Shinomiya",
+        "stats": {
+            "attack": 0.501461180591327,
+            "defense": 0.36366998855416716,
+            "resolve": 0.4285869664373639
+        },
+        "age": 29.67900562965467,
+        "death_age": 63,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Izuku",
+        "surname": "Midoriya",
+        "stats": {
+            "attack": 0.3440778483938108,
+            "defense": 0.4908245079707927,
+            "resolve": 0.5197941861296707
+        },
+        "age": 27.57885121675334,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Shouto",
+        "surname": "Todoroki",
+        "stats": {
+            "attack": 0.5612111311083554,
+            "defense": 0.44692368845350045,
+            "resolve": 0.29302347735368955
+        },
+        "age": 34.32687294194814,
+        "death_age": 67,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Tanjirou",
+        "surname": "Kamado",
+        "stats": {
+            "attack": 0.5781066578276775,
+            "defense": 0.4932107273894324,
+            "resolve": 0.2915180782892982
+        },
+        "age": 24.140108412774065,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Robin",
+        "surname": "Nico",
+        "stats": {
+            "attack": 0.29418069592865825,
+            "defense": 0.19534310182791992,
+            "resolve": 0.37879529210277807
+        },
+        "age": 29.776461273116162,
+        "death_age": 74,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Kazuma",
+        "surname": "Satou",
+        "stats": {
+            "attack": 0.39949691310588464,
+            "defense": 0.6263727405386518,
+            "resolve": 0.125973089074559
+        },
+        "age": 31.54074438908971,
+        "death_age": 69,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Shouyou",
+        "surname": "Hinata",
+        "stats": {
+            "attack": 0.4927617605717348,
+            "defense": 0.37728797629214295,
+            "resolve": 0.6943731126113546
+        },
+        "age": 30.14730123488047,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Chika",
+        "surname": "Fujiwara",
+        "stats": {
+            "attack": 0.5465701594807117,
+            "defense": 0.43367070569218713,
+            "resolve": 0.5559124576295725
+        },
+        "age": 30.567691613939022,
+        "death_age": 69,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Yuuji",
+        "surname": "Itadori",
+        "stats": {
+            "attack": 0.5651518065028843,
+            "defense": 0.6588120297927227,
+            "resolve": 0.4186830544624019
+        },
+        "age": 30.47978277420141,
+        "death_age": 74,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Zenitsu",
+        "surname": "Agatsuma",
+        "stats": {
+            "attack": 0.5371453905276345,
+            "defense": 0.35772083817735967,
+            "resolve": 0.33109734907809396
+        },
+        "age": 31.377234522929253,
+        "death_age": 71,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Chopper",
+        "surname": "Tony Tony",
+        "stats": {
+            "attack": 0.27027588877579306,
+            "defense": 0.788742086078946,
+            "resolve": 0.15507906219787482
+        },
+        "age": 30.18724748917043,
+        "death_age": 67,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Inosuke",
+        "surname": "Hashibira",
+        "stats": {
+            "attack": 0.38553613201456466,
+            "defense": 0.42094750007092796,
+            "resolve": 0.34655064917765016
+        },
+        "age": 31.331954022790942,
+        "death_age": 67,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Anya",
+        "surname": "Forger",
+        "stats": {
+            "attack": 0.34766343729591453,
+            "defense": 0.7278611169928734,
+            "resolve": 0.45375879463417224
+        },
+        "age": 5,
+        "death_age": 70,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Loid",
+        "surname": "Forger",
+        "stats": {
+            "attack": 0.5835059418531905,
+            "defense": 0.4129158191843098,
+            "resolve": 0.37400522227011723
+        },
+        "age": 27.24082496142771,
+        "death_age": 75,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Yor",
+        "surname": "Forger",
+        "stats": {
+            "attack": 0.336538348501935,
+            "defense": 0.5064790436241449,
+            "resolve": 0.5668023025500916
+        },
+        "age": 28.73147587845969,
+        "death_age": 65,
+        "raw_traits": {}
+    },
+    {
+        "given_name": "Nezuko",
+        "surname": "Kamado",
+        "stats": {
+            "attack": 0.40250749729690805,
+            "defense": 0.6649828315340286,
+            "resolve": 0.5352795507238092
+        },
+        "age": 30.105281432149553,
+        "death_age": 67,
+        "raw_traits": {}
+    }
+]
